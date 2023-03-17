@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lexend+Deca:wght@200&family=Oswald:wght@300&family=Pacifico&family=Roboto+Flex:opsz@8..144&family=Space+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" class="one">
+        <p id="head" >TODO</p>
+         <div id="div2" class="two" onclick="changeall()"></div>
+         <input type="text" id="box1" class="box1" placeholder="Create a new task..." value="" />
+         <button id="box2" class="box2" onclick="addelements()" >Add</button>
+       </div>
+        <div id="div3" class="three">
+          <ul id="lines"></ul>
+        </div>
+        <div id="last">
+          <p id="p1" class="ptag"><span id="increase">0</span> items left</p>
+          <p class="ptag" onclick="All()" >All</p>
+          <p class="ptag" id="active" onclick="Active()" >Active</p>
+          <p class="ptag" onclick="complete()" >completed</p>
+          <p class="ptag" onclick="clearcomplete()" >clear completed</p>
+        </div>
+        <script src="script.js"></script>  
+</body>
+</html>
